@@ -41,6 +41,8 @@ enum PathElement {
 			self = .addCurve(element.points[0], element.points[1], to: element.points[2])
 		case .closeSubpath:
 			self = .closeSubpath
+        default:
+            self = .closeSubpath
 		}
 	}
 }
